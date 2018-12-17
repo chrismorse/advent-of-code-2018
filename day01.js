@@ -14,7 +14,6 @@ fs.readFile(filePath, 'utf8', function(err, data)
   let hasDup = false;
   let i = 0;
   let ongoingSum = 0;
-  let curFreq = -1;
 
   while (!hasDup) {
     ongoingSum += +dataByLine[i];
