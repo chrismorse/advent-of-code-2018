@@ -5,7 +5,7 @@ filePath = path.join(__dirname, 'day01_input.txt');
 
 fs.readFile(filePath, 'utf8', function(err, data)
 {
-  let dataByLine = data.split("\n");
+  const dataByLine = data.split("\n");
 
   let sum = dataByLine.reduce((acc, num) => acc + +num, 0);
   console.log("part 1 answer: ", sum);
